@@ -1,2 +1,2 @@
-# codeigniter3-tutorial
-Implimentation of codeigniter tutorial given on website of Codeigniter.
+# Tic Tac Toe
+This project is inspired by react tutorial.
