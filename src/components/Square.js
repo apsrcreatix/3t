@@ -21,6 +21,7 @@ export default function Square({ value, onClick, isWinningBlock, index }) {
         borderRightWidth: "0px",
         writingMode: "horizontal-tb",
       }}
+      aria-label={`clickable block number ${index + 1}`}
     >
       <AnimatedAvatar value={value} isWinningBlock={isWinningBlock} />
     </button>

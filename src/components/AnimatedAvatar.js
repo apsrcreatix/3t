@@ -11,6 +11,8 @@ export default function AnimatedAvatar({ value, isWinningBlock }) {
           : `animate__animated animate__bounceIn animate__fast`
       }
       style={{ fontSize: square_style.height / 4 }}
+      role="img"
+      aria-label="emoticon"
     >
       {value && value.avatar}
     </span>
