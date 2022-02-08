@@ -1,7 +1,51 @@
+// choose a combo
+const player_combos = [
+  {
+    X: {
+      avatar: "🦄",
+      animation: "animate__wobble",
+      theme: "has-background-danger-light",
+    },
+    O: {
+      avatar: "👽",
+      animation: "animate__heartBeat",
+      theme: "has-background-info-light",
+    },
+  },
+  {
+    X: {
+      avatar: "🌚",
+      animation: "animate__wobble",
+      theme: "has-background-grey-lighter",
+    },
+    O: {
+      avatar: "🌝",
+      animation: "animate__heartBeat",
+      theme: "has-background-warning-light",
+    },
+  },
+  {
+    X: {
+      avatar: "😏",
+      animation: "animate__wobble",
+      theme: "has-background-warning-light",
+    },
+    O: {
+      avatar: "😒",
+      animation: "animate__heartBeat",
+      theme: "has-background-link-light",
+    },
+  },
+];
+
+// choose a set randomly
+const choosen_set =
+  player_combos[Math.floor(Math.random() * player_combos.length)];
+
 //init state
 export const init_game_state = {
-  playerX: { avatar: "🦄", animation: "animate__wobble", theme: "has-background-danger-light" },
-  playerO: { avatar: "👽", animation: "animate__heartBeat", theme: "has-background-info-light" },
+  playerX: choosen_set.X,
+  playerO: choosen_set.O,
   history: [
     {
       squares: Array(9).fill({ avatar: null, animation: null, theme: null }),
