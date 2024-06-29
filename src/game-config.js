@@ -36,6 +36,30 @@ const player_combos = [
       theme: "has-background-link-light",
     },
   },
+   {
+    X: {
+      avatar: "❄️",
+      animation: "animate__wobble",
+      theme: "has-background-info-light",
+    },
+    O: {
+      avatar: "🔥",
+      animation: "animate__heartBeat",
+      theme: "has-background-danger-light",
+    },
+  },
+  {
+    X: {
+      avatar: "❤️",
+      animation: "animate__wobble",
+      theme: "has-background-danger-light",
+    },
+    O: {
+      avatar: "💩",
+      animation: "animate__heartBeat",
+      theme: "has-background-grey-lighter",
+    },
+  },
 ];
 
 // choose a set randomly
